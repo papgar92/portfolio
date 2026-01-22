@@ -11,13 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         </section>
         <!-- FOOTER -->
         <footer>
-            <p>© <span id="current-year"></span> Pablo Pérez García | Portfolio</p>
+            <p>© Pablo Pérez García | Portfolio ASIR & Ciberseguridad</p>
             <p>Actualizado: <span id="current-month"></span> | Madrid, España</p>
         </footer>
     `;
-    
-    // Script se ejecuta DESPUÉS de inyectar HTML
-    document.getElementById('current-year').textContent = new Date().getFullYear();
     
     // Formato: Enero 2026 (Primera letra mayúscula)
     const fecha = new Date();
