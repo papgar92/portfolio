@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('header-placeholder').innerHTML = `
         <header>
             <div class="profile">
-                <div><img src="resources/Profile image.jpeg" alt="Foto de perfil"></div>
+                <div><img src="resources/Profile image.png" alt="Foto de perfil"></div>
                 <div class="profile-info">
                     <h1>Pablo Pérez García</h1>
                     <p class="title">🎓 Profesional Tech Jr. | 🔐 Interés en ciberseguridad y redes</p>
