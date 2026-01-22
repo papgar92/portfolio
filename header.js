@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="contact-links">
                         <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
                         <a href="resources/CV PPG.pdf" download="CV-Pablo-Perez-Garcia-SOC.pdf">Curriculum Vitae</a>
-                        <a href="resources/Recomendacion.pdf" download="Referencias-Pablo-Perez-Garcia.pdf">Referencias</a>
+                        <a href="resources/Recomendacion.pdf" target="_blank">Referencias</a>
                     </div>
                 </div>
             </div>
