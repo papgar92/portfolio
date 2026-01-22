@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('footer-placeholder').innerHTML = `
         <section class="contact-section">
             <h2>📬 ¿Interesado en Colaborar?</h2>
-            <p>Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles relacionados.</p>
+            <p>Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles IT.</p>
             <div class="contact-links">
                 <a href="mailto:perez.gcia@gmail.com">Enviar Email</a>
                 <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
