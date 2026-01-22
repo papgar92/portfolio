@@ -5,27 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Pérez García - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="header.js" defer></script>
+    <script src="footer.js" defer></script>
 </head>
 <body>
+    <!-- HEADER se carga aquí -->
+    <div id="header-placeholder"></div>
+    
     <div class="container">
-        <!-- HEADER -->
-        <header>
-            <div class="profile">
-                <div>
-                    <img src="resources/Profile image.jpeg" alt="Foto de perfil">
-                </div>
-                <div class="profile-info">
-                    <h1>Pablo Pérez García</h1>
-                    <p class="title">🎓 Profesional Tech Jr. | 🔐 Interés en ciberseguridad y redes</p>
-                    <p>Madrid, España</p>
-                    <p>📧 perez.gcia@gmail.com | 📱 +34 681279891</p>
-                    <div class="contact-links">
-                        <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <!-- SOBRE MÍ -->
         <section>
             <h2>👋 Sobre Mí</h2>
@@ -34,25 +21,24 @@
                 con especial interés en <strong>ciberseguridad y redes</strong>. 
                 Cuento con certificados de profesionalidad en redes, ciberseguridad OT y fundamentos de backend (Python y Django). Quiero enfocar mi carrera profesional hacia la ciberseguridad. 
                 Soy un profesional Jr. pero eso no me ha impedido realizar algunos proyectos (tanto home labs como profesionales):
-
-
-        <li><strong><a href="proyectos.html#tf-asir" target="_blank">Trabajo Fin de Grado</a></strong> - Diseñé un entorno virtualizado de una red corporativa segura para una PYME con herramientas de código abierto: incluyendo firewall, IDS, Directorio Activo y formación en ciberseguridad.</li>
-        <li><strong><a href="proyectos.html#kali-lab" target="_blank">Kali Linux Home Lab</a></strong> - Servidor casero en portátil antiguo con Kali Linux, acceso SSH/XRDP y pruebas de pentesting (Nmap, Metasploit) hacia máquina virtual vulnerable.</li>
-        <li><strong><a href="proyectos.html#proxmox" target="_blank">Proxmox + Nagios</a></strong> - Servidor casero en portátil antiguo con Kali Linux, acceso SSH/XRDP y pruebas de pentesting (Nmap, Metasploit) hacia máquina virtual vulnerable.</li>
-    </ul>
             </p>
+            <ul style="margin: 20px 0; padding-left: 25px;">
+                <li><strong><a href="proyectos.html#tf-asir" target="_blank">Trabajo Fin de Grado</a></strong> - Diseñé un entorno virtualizado de una red corporativa segura para una PYME con herramientas de código abierto: incluyendo firewall, IDS, Directorio Activo y formación en ciberseguridad.</li>
+                <li><strong><a href="proyectos.html#kali-lab" target="_blank">Kali Linux Home Lab</a></strong> - Servidor casero en portátil antiguo con Kali Linux, acceso SSH/XRDP y pruebas de pentesting (Nmap, Metasploit) hacia máquina virtual vulnerable.</li>
+                <li><strong><a href="proyectos.html#proxmox" target="_blank">Proxmox + Nagios</a></strong> - Servidor inutilizado reconvertido a host de Proxmox, habilitado acceso SSH y web. Implementación VM Ubuntu Server y servicio Nagios Core para monitorización.</li>
+            </ul>
             <p style="margin-top: 15px;">
                 Experiencia práctica en:
                 <ul style="margin: 20px 0; padding-left: 25px;">
-                    <li>Virtualización: ProxMox, VMware, Oracle VirtualBox</li>
-                    <li>Seguridad perimetral: pfSense, WatchGuard</li>
-                    <li>IDS: Snort</li>
-                    <li>Monitorización: Nagios, Grafana, </li>
-                    <li>Contenerizarión: Docker</li>
-                    <li>SS.OO: Windows y Linux (Ubuntu y Kali Linux)</li>
+                    <li>Soporte a usuarios</li>
+                    <li>Reparación de equipos informáticos y de comunicaciones</li>
+                    <li>Maquetado de equipos</li>
+                    <li>Plataformas Cloud y On Premise</li>
+                    <li>Administración Google WorkSpace y Microsoft 365</li>
+                    <li>Herramientas de ticketing (ITSM Helix y JIRA) </li>
                 </ul>
             </p>
-             Con experiencia como Técnico de Soporte IT, buscando oportunidad como <strong>Junior en Ciberseguridad</strong>.
+            Con experiencia como Técnico de Soporte IT, buscando oportunidad como <strong>Junior en Ciberseguridad</strong>.
         </section>
 
         <!-- HABILIDADES -->
@@ -63,7 +49,7 @@
                     <h3>Virtualización & Infraestructura</h3>
                     <ul>
                         <li>Proxmox, VirtualBox y VMware</li>
-                        <li>pfSense (Firewall)</li>
+                        <li>Firewalls (WatchGuard y pfSense)</li>
                         <li>Active Directory / Azure Active Directory</li>
                         <li>Configuración de redes LAN</li>
                     </ul>
@@ -90,6 +76,7 @@
                     <h3>Herramientas & Monitorización</h3>
                     <ul>
                         <li>Nagios Core</li>
+                        <li>Grafana</li>
                         <li>Cisco Packet Tracer</li>
                         <li>SSH / RDP</li>
                         <li>Wireshark</li>
@@ -98,172 +85,21 @@
             </div>
         </section>
 
-
- 
-
-
-    <!-- PROYECTO 1: TFG ASIR -->
-            <!--<section>
-                <h2>📋 Proyectos Destacados</h2>
-
-                <div class="project">
-                    <h3>🔒 Diseño e Implementación de Red Segura para PYME (TFG ASIR)</h3>
-                    <div class="project-meta">
-                        <span>📅 Diciembre 2025</span>
-                        <span>🏆 Trabajo Fin de Grado</span>
-                        <span>⭐ Proyecto Integral</span>
-                    </div>
-
-                    <p>
-                        <strong>Proyecto principal de mi ciclo ASIR:</strong> Diseño, implementación y validación de una infraestructura 
-                        de red segura para una PYME emergente utilizando 
-                        herramientas de código abierto y virtualización.
-                    </p>
-
-                    <div class="project-highlights">
-                        <h4>✅ Logros Principales:</h4>
-                        <ul>
-                            <li><strong>Arquitectura de Red:</strong> Topología estrella extendida con segmentación WAN/LAN usando Cisco Packet Tracer</li>
-                            <li><strong>Seguridad Perimetral:</strong> pfSense como firewall/router lógico con reglas de filtrado avanzadas (NAT, DNS, control de puertos)</li>
-                            <li><strong>Detección de Intrusiones:</strong> Snort (IDS) con reglas comunitarias para monitoreo de tráfico en tiempo real</li>
-                            <li><strong>Monitorización:</strong> Nagios Core para visualización de servicios, dispositivos y alertas en tiempo real</li>
-                            <li><strong>Gestión Centralizada:</strong> Directorio Activo (Active Directory) en Windows Server para administración centralizada</li>
-                            <li><strong>Formación en Ciberseguridad:</strong> Programa de capacitación en phishing, smishing y buenas prácticas de seguridad</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-highlights">
-                        <h4>🛠️ Tecnologías Utilizadas:</h4>
-                            <div class="tech-list">
-                                <span class="tech-tag">Oracle VirtualBox</span>
-                                <span class="tech-tag">pfSense</span>
-                                <span class="tech-tag">Snort IDS</span>
-                                <span class="tech-tag">Nagios Core</span>
-                                <span class="tech-tag">Windows Server 2022</span>
-                                <span class="tech-tag">Ubuntu Server</span>
-                                <span class="tech-tag">Directorio Activo</span>
-                                <span class="tech-tag">Cisco Packet Tracer</span>
-                                <span class="tech-tag">SSH/RDP</span>
-                            </div>
-                    </div>
-                    
-
-                    <div class="project-highlights">
-                        <h4>📊 Metodología & Resultados:</h4>
-                        <ul>
-                            <li>Metodología Waterfall: 5 fases (requisitos → diseño → implementación → pruebas → documentación)</li>
-                            <li>Pruebas validadas: conectividad, autenticación, detección de intrusiones, monitorización, seguridad perimetral</li>
-                            <li>Red totalmente funcional, segura y escalable para PYME</li>
-                            <li>Coste de implementación: 7.950-10.250€ (vs 15.000€+ con soluciones propietarias)</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://drive.google.com/file/d/1PwWBgOksGR7kOjKWN7LYtbI0KiHQg90q/view?usp=share_link" target="_blank">📽️ Ver Presentación</a>
-                    </div>
-                </div>
-            -->
-            
-
-
-
-    <!-- PROYECTO 2: SERVIDOR KALI -->
-            <!--
-                <div class="project">
-                    <h3>🎯 Servidor Casero Kali Linux + Pentesting Práctico</h3>
-                    <div class="project-meta">
-                        <span>📅 2025-2026</span>
-                        <span>🔍 Pentesting & Lab</span>
-                        <span>🌐 Acceso SSH/RDP</span>
-                    </div>
-
-                    <p>
-                        Configuración de servidor local Kali Linux para labores de pentesting y pruebas de seguridad. 
-                        Servidor completamente operativo con acceso remoto seguro (SSH) y entorno gráfico (XRDP) para 
-                        realizar pruebas de vulnerabilidades y escaneos de seguridad en entorno controlado.
-                    </p>
-
-                <div class="project-highlights">
-                    <h4>✅ Componentes Implementados:</h4>
-                        <ul>
-                            <li><strong>Kali Linux:</strong> Sistema operativo especializado en ciberseguridad y pentesting</li>
-                            <li><strong>SSH:</strong> Acceso remoto seguro cifrado para línea de comandos</li>
-                            <li><strong>XRDP:</strong> Protocolo de escritorio remoto para interfaz gráfica</li>
-                            <li><strong>Herramientas de Pentesting:</strong> Nmap, Metasploit, Wireshark configurados</li>
-                        </ul>
-                </div>
-
-                <div class="project-highlights">
-                    <h4>🧪 Actividades realizadas en el lab:</h4>
-                        <div class="tech-list">
-                            <span class="tech-tag">Exploración de servicios</span>
-                            <span class="tech-tag">Escaneos básicos de puertos</span>
-                            <span class="tech-tag">Prácticas con Metasploit en entorno controlado</span>
-                        </div>
-                </div>
-            -->
-
-    <!-- PROYECTO 3: SERVIDOR VIRTUALIZADOR EN ENTORNO LABORAL -->
-            <!--
-                <div class="project">
-                    <h3>🔧 Implementación Proxmox + Ubuntu Server + Nagios Core </h3>
-                    <div class="project-meta">
-                        <span>📅 Dic 2025 - Ene 2026</span>
-                        <span>🏢 Experiencia laboral</span>
-                        <span>📊 Monitorización empresarial</span>
-                    </div>
-
-                    <p>
-                        Formateo e implementación completa de servidor de virtualización <strong>Proxmox VE</strong> en entorno 
-                        productivo de PYME. Configuración de infraestructura crítica de monitorización con Nagios Core y 
-                        sistema de alertas SMTP para garantizar alta disponibilidad de servicios empresariales.
-                    </p>
-
-                    <div class="project-highlights">
-                        <h4>✅ Componentes Implementados:</h4>
-                        <ul>
-                            <li><strong>Proxmox VE:</strong> Plataforma de virtualización completa en servidor dedicado</li>
-                            <li><strong>Ubuntu Server VM:</strong> Máquina virtual autoarranque configurada para alta disponibilidad</li>
-                            <li><strong>Nagios Core:</strong> Sistema de monitorización para PYME con recursos limitados</li>
-                            <li><strong>PNP4Nagios:</strong> Dashboards gráficos para visualización de métricas</li>
-                            <li><strong>Alertas SMTP:</strong> Notificaciones automáticas por email a equipo de soporte</li>
-                        </ul>
-                    </div>
-
-                    <div class="project-highlights">
-                        <h4>📈 Sistemas Monitorizados:</h4>
-                        <div class="tech-list">
-                            <span class="tech-tag">Servidores SAP</span>
-                            <span class="tech-tag">Directorio Activo</span>
-                            <span class="tech-tag">Switch SNMP</span>
-                            <span class="tech-tag">Servicios críticos</span>
-                            <span class="tech-tag">Terminales empresariales</span>
-                        </div>
-                    </div>
-                </div>
-
-                    
-
-            </section>
-            -->
-
-
-
         <!-- FORMACIÓN -->
         <section>
             <h2>🎓 Formación</h2>
             <div class="project">
                 <h3>Ciclo Formativo Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
-                <p><strong>Estado:</strong> A punto de finalizar
+                <p><strong>Estado:</strong> A punto de finalizar</p>
                 <p>
-                    Formación integral en redes, ciberseguridad, virtualización, administración de sistemas, seguridad perimetral, detección de intrusiones y gestión de infraestructuras TI.
+                    Formación integral en redes, seguridad y alta disponibilidad, virtualización, administración de sistemas e infraestructura
                 </p>
             </div>
         </section>
 
         <!-- CERTIFICACIONES -->
         <section>
-            <h2>🏅 Certificaciones & Aprendizaje</h2>
+            <h2>🏅 Certificaciones & Formación complementaria</h2>
             <div class="cert-container">
                 <div class="cert-box">
                     <h3>Certificaciones Técnicas</h3>
@@ -274,7 +110,7 @@
                     </ul>
                 </div>
                 <div class="cert-box">
-                    <h3>Proximos proyectos</h3>
+                    <h3>Próximos proyectos</h3>
                     <ul>
                         <li>CCNA</li>
                         <li>CCST</li>
@@ -284,28 +120,10 @@
                 </div>
             </div>
         </section>
-
-        <!-- CONTACTO -->
-        <section class="contact-section">
-            <h2>📬 ¿Interesado en Colaborar?</h2>
-            <p>
-                Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles relacionados.
-            </p>
-            <div class="contact-links">
-                <a href="mailto:perez.gcia@Gmail.com">Enviar Email</a>
-                <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
-            </div>
-        </section>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© <span id="current-year"></span> Pablo Pérez García | Portfolio ASIR & Ciberseguridad</p>
-        <p>Actualizado: <span id="current-month"></span> | Madrid, España</p>
-    </footer>
     
-    <script>
-        // Footer automático - Se actualiza SOLO
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        document.getElementById('current-month').textContent = new Date().toLocaleDateString('es-ES', { month: 'long' });
-    </script>
+    <!-- CONTACTO + FOOTER se carga aquí -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>
+
