@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </section>
         <!-- FOOTER -->
         <footer>
-            <p>© Pablo Pérez García | Portfolio ASIR & Ciberseguridad</p>
+            <p>© Pablo Pérez García | Portfolio</p>
             <p>Actualizado: <span id="current-month"></span> | Madrid, España</p>
         </footer>
     `;
