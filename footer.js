@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="contact-links">
                 <a href="mailto:perez.gcia@gmail.com">✉️ Escríbeme</a>
-                <a href="tel:+34681279891"> 📱 +34 Llámame</a>
+                <a href="tel:+34681279891"> 📞 Llámame</a>
                 <a href="https://wa.me/34681279891?text=Hola%20Pablo,%20me%20interesa%20tu%20perfil%20para..." target="_blank">📱 WhatsApp</a>
             </div>
 
