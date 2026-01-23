@@ -5,10 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <h2>📬 ¿Interesado en Colaborar?</h2>
             <p>Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles relacionados.</p>
             <div class="contact-links">
-                <a href="mailto:perez.gcia@gmail.com">✉️ Escríbeme</a>
-                <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
                 <a href="https://wa.me/34681279891?text=Hola%20Pablo,%20me%20interesa%20tu%20perfil%20para..." 
                    target="_blank">📱 WhatsApp</a>
+                <a href="mailto:perez.gcia@gmail.com">✉️ Escríbeme</a>
+                <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
+                
             </div>
         </section>
         <!-- FOOTER -->
