@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <p>Madrid, España</p>
 
                     <div class="contact-links">
-                        <p> 
                         <a href="mailto:perez.gcia@gmail.com">📧 perez.gcia@gmail.com</a> 
-                        <a href="tel:+34681279891"> 📱 +34 681279891</a></p>
+                        <a href="tel:+34681279891"> 📱 +34 681279891</a>
                     </div>
 
                     
