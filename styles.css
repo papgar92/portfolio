@@ -1381,4 +1381,15 @@ pre code {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--color-primary-hover);
+
+}
+
+.whatsapp-btn {
+    background: #25D366 !important;
+    border-color: #25D366 !important;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E !important;
+    border-color: #128C7E !important;
 }
