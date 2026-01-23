@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="contact-links">
                 <a href="mailto:perez.gcia@gmail.com">Escríbeme</a>
                 <a href="https://linkedin.com/in/ppg92" target="_blank">LinkedIn</a>
+                <a href="https://wa.me/34681279891?text=Hola%20Pablo,%20me%20interesa%20tu%20perfil%20para..." 
+                   target="_blank" 
+                   class="btn-primary whatsapp-btn">📱 WhatsApp</a>
             </div>
         </section>
         <!-- FOOTER -->
