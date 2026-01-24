@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('footer-placeholder').innerHTML = `
         <!-- CONTACTO -->
-        <section class="contact-section">
+        <section class="contact-section" id="contacto">
             <h2>📬 ¿Interesado en Colaborar?</h2>
             <p>Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles relacionados.</p>
             
