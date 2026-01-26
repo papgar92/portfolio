@@ -13,6 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
             
         </section>
+
+
+
+
+
+        <!-- BOTÓN FLOTANTE VOLVER INICIO (FUERA DE FOOTER) -->
+        <a href="index.html" class="back-to-top" title="Volver al inicio"> ← Inicio
+        </a>
+
+
+
+
+
+        
         <!-- FOOTER -->
         <footer>
             <p>© Pablo Pérez García | Portfolio</p>
