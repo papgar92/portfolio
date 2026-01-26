@@ -4,29 +4,20 @@ document.addEventListener('DOMContentLoaded', function() {
         <section class="contact-section" id="contacto">
             <h2>📬 ¿Interesado en Colaborar?</h2>
             <p>Disponible para oportunidades como Junior en Ciberseguridad, Administración de Sistemas o roles relacionados.</p>
-            
             <div class="contact-links">
                 <a href="mailto:perez.gcia@gmail.com">✉️ Escríbeme</a>
                 <a href="tel:+34681279891"> 📞 Llámame</a>
                 <a href="https://wa.me/34681279891?text=Hola%20Pablo,%20me%20interesa%20tu%20perfil%20para..." target="_blank">📱 WhatsApp</a>
             </div>
-
-            
         </section>
 
+        <!-- BOTÓN VOLVER AL INICIO -->
+        <div class="back-to-top-container">
+            <a href="/portfolio/#header-placeholder" class="back-to-top-btn" title="Volver al inicio">
+                ← Inicio
+            </a>
+        </div>
 
-
-
-
-        <!-- BOTÓN FLOTANTE VOLVER INICIO (FUERA DE FOOTER) -->
-        <a href="index.html" class="back-to-top" title="Volver al inicio"> ← Inicio
-        </a>
-
-
-
-
-
-        
         <!-- FOOTER -->
         <footer>
             <p>© Pablo Pérez García | Portfolio</p>
@@ -34,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </footer>
     `;
     
-    // Formato: Enero 2026 (Primera letra mayúscula)
+    // Fecha dinámica...
     const fecha = new Date();
     const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
                    'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
