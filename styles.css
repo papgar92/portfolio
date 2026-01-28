@@ -2297,4 +2297,20 @@ pre code {
     color: white;
 }
 
+.pdf-btn {
+    background: #1e3c72;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.pdf-btn:hover {
+    background: #2a5298;
+}
+
 
