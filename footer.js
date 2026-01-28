@@ -34,34 +34,3 @@ document.addEventListener('DOMContentLoaded', function() {
     const mesFormato = meses[fecha.getMonth()] + ' ' + fecha.getFullYear();
     document.getElementById('current-month').textContent = mesFormato;
 });
-
-
-
-
-    // MODAL PDF FUNCIONANDO
-    let currentPdfUrl = '';
-    
-    window.openPdfModal = function(pdfPath) {
-        currentPdfUrl = pdfPath;
-        const embed = document.getElementById('pdfEmbed');
-        const downloadLink = document.getElementById('pdfDownload');
-        
-        // EMBED directo (funciona GitHub Pages)
-        embed.src = pdfPath;
-        downloadLink.href = pdfPath;
-        downloadLink.textContent = 'Descargar ' + pdfPath.split('/').pop();
-        
-        document.getElementById('pdfModal').style.display = 'block';
-    };
-
-    window.closePdfModal = function() {
-        document.getElementById('pdfModal').style.display = 'none';
-        document.getElementById('pdfEmbed').src = '';
-    };
-
-    // ESC / Click fuera
-    document.addEventListener('keydown', (e) => e.key === 'Escape' && closePdfModal());
-    document.getElementById('pdfModal').onclick = (e) => {
-        if (e.target.id === 'pdfModal') closePdfModal();
-    };
-});
