@@ -38,30 +38,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+    // MODAL PDF FUNCIONANDO
+    let currentPdfUrl = '';
+    
+    window.openPdfModal = function(pdfPath) {
+        currentPdfUrl = pdfPath;
+        const embed = document.getElementById('pdfEmbed');
+        const downloadLink = document.getElementById('pdfDownload');
+        
+        // EMBED directo (funciona GitHub Pages)
+        embed.src = pdfPath;
+        downloadLink.href = pdfPath;
+        downloadLink.textContent = 'Descargar ' + pdfPath.split('/').pop();
+        
+        document.getElementById('pdfModal').style.display = 'block';
+    };
 
-    // 2. MODAL PDF FUNCTIONS (NUEVO)
-        window.openPdfModal = function(pdfPath) {
-            document.getElementById('pdfFrame').src = pdfPath;
-            document.getElementById('pdfModal').style.display = 'block';
-        };
-    
-        window.closePdfModal = function() {
-            document.getElementById('pdfModal').style.display = 'none';
-            document.getElementById('pdfFrame').src = '';
-        };
-    
-        // ESC cierra modal
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                window.closePdfModal();
-            }
-        });
-    
-        // Click fuera cierra
-        window.onclick = function(event) {
-            const modal = document.getElementById('pdfModal');
-            if (event.target == modal) {
-                window.closePdfModal();
-            }
-        };
-    });
+    window.closePdfModal = function() {
+        document.getElementById('pdfModal').style.display = 'none';
+        document.getElementById('pdfEmbed').src = '';
+    };
+
+    // ESC / Click fuera
+    document.addEventListener('keydown', (e) => e.key === 'Escape' && closePdfModal());
+    document.getElementById('pdfModal').onclick = (e) => {
+        if (e.target.id === 'pdfModal') closePdfModal();
+    };
+});
