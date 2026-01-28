@@ -127,17 +127,20 @@
     <!-- CONTACTO + FOOTER se carga aquí -->
     <div id="footer-placeholder"></div>
 
-    <!-- MODALES PDF -->
-    <div id="pdfModal" class="pdf-modal">
-        <span class="close-pdf" onclick="closePdfModal()">&times;</span>
+    <!-- MODAL PDF (ANTES </body>) -->
+    <div id="pdfModal" class="pdf-modal" style="display:none;">
+        <span class="close-pdf" onclick="closePdfModal()">×</span>
         <div class="pdf-modal-content">
-            <iframe id="pdfFrame"></iframe>
+            <embed id="pdfEmbed" type="application/pdf" width="100%" height="100%">
+            <p>No se puede mostrar PDF. <a href="#" id="pdfDownload">Descargar</a></p>
         </div>
     </div>
 
 
+
 </body>
 </html>
+
 
 
 
