@@ -1,2 +1,12 @@
 User-agent: *
+Disallow: /admin/
+Disallow: /config/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /.git/
+Disallow: /.env
+Allow: /
+
+# Security: Honeypot for bad bots
+User-agent: BadBot
 Disallow: /
