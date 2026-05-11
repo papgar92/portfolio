@@ -311,6 +311,11 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--font-family-base);
+  background: var(--color-background);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: var(--line-height-normal);
 }
 
 *,
@@ -609,11 +614,13 @@ select.form-control {
 
 /* Container layout */
 .container {
+  max-width: 1000px;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: var(--space-16);
-  padding-left: var(--space-16);
+  padding: var(--space-20);
+  position: relative; /* Added for z-index context */
+  z-index: 10; /* Ensures content is above terminal background */
 }
 
 @media (min-width: 640px) {
@@ -738,29 +745,6 @@ select.form-control {
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
-/* ========================================
-   PORTFOLIO ASIR - ESTILOS GLOBALES
-   ======================================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-family-base);
-    background: var(--color-background);
-    color: var(--color-text);
-    min-height: 100vh;
-    line-height: var(--line-height-normal);
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: var(--space-20);
-}
 
 /* ========================================
    HEADER / ABOUT SECTION
@@ -1511,16 +1495,14 @@ pre code {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-background);
-    /* Usamos el color primario (teal) para que encaje con tu diseño, 
-       pero puedes cambiarlo a #00ff00 si quieres un verde hacker clásico */
+    background-color: transparent; 
     color: var(--color-primary); 
     font-family: var(--font-family-mono);
     font-size: var(--font-size-sm);
     padding: var(--space-20);
     box-sizing: border-box;
-    z-index: -1;
-    opacity: 0.15; /* Importante mantener baja opacidad para leer el contenido */
+    z-index: 1; 
+    opacity: 0.15; 
     overflow: hidden;
     pointer-events: none;
 }
