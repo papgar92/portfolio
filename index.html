@@ -145,7 +145,57 @@
     
 
 
+    <script>
+    const codeLines = [
+        "admin@blueteam-server:~$ nmap -sV -p- 192.168.1.0/24",
+        "Starting Nmap 7.92 ( https://nmap.org )",
+        "Host is up (0.0020s latency).",
+        "PORT     STATE SERVICE VERSION",
+        "22/tcp   open  ssh     OpenSSH 8.2p1",
+        "80/tcp   open  http    Apache httpd 2.4.41",
+        "admin@blueteam-server:~$ tail -f /var/log/snort/alert",
+        "[**] [1:1000001:1] SQL Injection Attempt Detected [**]",
+        "[Classification: Web Application Attack] [Priority: 1]",
+        "admin@blueteam-server:~$ docker ps -a",
+        "CONTAINER ID   IMAGE         COMMAND    STATUS",
+        "a1b2c3d4e5f6   wazuh/wazuh   \"/init\"    Up 3 days",
+        "admin@blueteam-server:~$ clear",
+        "Reiniciando secuencias de monitorización..."
+    ];
 
+    const typedTextElement = document.getElementById('typed-text');
+    let lineIndex = 0;
+    let charIndex = 0;
+
+    function typeCode() {
+        if (lineIndex < codeLines.length) {
+            if (charIndex < codeLines[lineIndex].length) {
+                // Escribe el siguiente carácter
+                typedTextElement.innerHTML += codeLines[lineIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeCode, Math.random() * 50 + 20); // Velocidad de escritura variable
+            } else {
+                // Salto de línea al terminar la frase
+                typedTextElement.innerHTML += "<br>";
+                lineIndex++;
+                charIndex = 0;
+                setTimeout(typeCode, 500); // Pausa entre líneas
+            }
+        } else {
+            // Reinicia el bucle limpiando la consola
+            setTimeout(() => {
+                typedTextElement.innerHTML = "";
+                lineIndex = 0;
+                typeCode();
+            }, 2000); // Pausa antes de limpiar y reiniciar
+        }
+    }
+
+    // Iniciar el efecto
+    window.onload = typeCode;
+</script>
+
+    
 </body>
 </html>
 
