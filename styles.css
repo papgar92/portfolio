@@ -751,7 +751,10 @@ select.form-control {
    ======================================== */
 
 header {
-    background: var(--color-primary);
+    background: var(--color-primary); /* Fallback */
+    background: color-mix(in srgb, var(--color-primary) 90%, transparent); /* 10% de transparencia */
+    backdrop-filter: blur(8px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(8px);
     padding: var(--space-32);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
@@ -759,6 +762,8 @@ header {
     text-align: center;
     border: 1px solid var(--color-primary);
     color: var(--color-btn-primary-text);
+    position: relative; /* Asegura que flote por encima del fondo */
+    z-index: 10;
 }
 
 .profile {
@@ -899,13 +904,18 @@ header {
    ======================================== */
 
 section {
-    background: var(--color-surface);
+    background: var(--color-surface); /* Fallback */
+    background: color-mix(in srgb, var(--color-surface) 85%, transparent); /* 15% de transparencia */
+    backdrop-filter: blur(8px); /* Efecto cristal */
+    -webkit-backdrop-filter: blur(8px);
     padding: var(--space-24);
     border-radius: var(--radius-lg);
     margin-bottom: var(--space-20);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--color-card-border);
     animation: fadeInUp 0.6s var(--ease-standard);
+    position: relative;
+    z-index: 10;
 }
 
 @keyframes fadeInUp {
@@ -1498,11 +1508,12 @@ pre code {
     background-color: transparent; 
     color: var(--color-primary); 
     font-family: var(--font-family-mono);
-    font-size: var(--font-size-sm);
-    padding: var(--space-20);
+    font-size: 1.2rem; /* <-- Aumentamos el tamaño de la fuente un 50% */
+    line-height: 1.8;  /* <-- Damos más espacio entre líneas */
+    padding: 40px 20px; /* <-- Lo despegamos un poco de la esquina superior */
     box-sizing: border-box;
     z-index: 1; 
-    opacity: 0.15; 
+    opacity: 0.25; /* <-- Subimos un pelín la opacidad para que se vea bien a través del cristal */
     overflow: hidden;
     pointer-events: none;
 }
