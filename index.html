@@ -3,218 +3,715 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo Pérez García - Portfolio</title>
+    <title>Pablo Pérez García — Blue Team · Analista SOC · Forense Digital</title>
+    <meta name="description" content="Portfolio de Pablo Pérez García — Profesional IT especializado en ciberseguridad defensiva, Blue Team y análisis forense. Madrid, España.">
+    <meta property="og:title"       content="Pablo Pérez García — Blue Team & Forense Digital">
+    <meta property="og:description" content="Portfolio profesional. Especialización en Blue Team, SOC y análisis forense. Madrid.">
+    <meta property="og:type"        content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <script src="header.js" defer></script>
-    <script src="footer.js" defer></script>
 </head>
 <body>
-    <!--
-    <div id="terminal-background">
-        <span id="typed-text"></span><span class="cursor">_</span>
+
+<!-- ══════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════ -->
+<nav>
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">ppg<span>@blueteam</span>:~$</a>
+        <ul class="nav-links">
+            <li><a href="#sobre-mi">about</a></li>
+            <li><a href="#habilidades">skills</a></li>
+            <li><a href="#proyectos">projects</a></li>
+            <li><a href="#formacion">learning</a></li>
+            <li><a href="#experiencia">experience</a></li>
+            <li><a href="#contacto">contact</a></li>
+        </ul>
     </div>
-    -->
-    
-    <!-- HEADER se carga aquí -->
-    
-    <div id="header-placeholder"></div>
-    
+</nav>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section id="hero">
     <div class="container">
-        <!-- SOBRE MÍ -->
-        <section>
-            <h2>👋 Sobre Mí</h2>
-            <p>
-                Profesional IT en transición hacia <strong>ciberseguridad defensiva</strong>, con base sólida en <strong>administración de sistemas</strong> Microsoft, 
-                monitorización de infraestructura y respuesta a incidencias técnicas. Formación activa en Blue Team, 
-                análisis forense en entornos Windows y detección de amenazas con herramientas como Snort y Nagios.
-                
+        <div class="hero-content">
+
+            <div class="hero-prompt">
+                <span>pablo@hokage.com:~$&nbsp;</span>
+                <span id="typed-text"></span>
+                <span class="cur"></span>
+            </div>
+
+            <h1 class="hero-name"><em>Pablo</em><br>Pérez García</h1>
+
+            <div class="hero-role">// Blue Team · Incident Response · Digital Forensics</div>
+
+            <p class="hero-desc">
+                Profesional IT especializadome en ciberseguridad defensiva. Sólida base en administración de sistemas, formación activa en Blue Team y análisis forense.
             </p>
-            <ul style="margin: 20px 0; padding-left: 25px;">
-                <li><strong><a href="proyectos/tfgasir#tf-asir">Trabajo Fin de Grado</a></strong> - Diseñé un entorno virtualizado de una red corporativa segura para una PYME con herramientas de código abierto: incluyendo firewall, IDS, Directorio Activo y formación en ciberseguridad.</li>
-                <li><strong><a href="proyectos/kali.html#kali-lab">Kali Linux Home Lab</a></strong> - Servidor casero en portátil antiguo con Kali Linux, acceso SSH/XRDP y pruebas de pentesting (Nmap, Metasploit) hacia máquina virtual vulnerable.</li>
-                <li><strong><a href="proyectos/proxmox.html#proxmox">Proxmox + Nagios</a></strong> - Servidor inutilizado reconvertido a host de Proxmox, habilitado acceso SSH y web. Implementación VM Ubuntu Server y servicio Nagios Core para monitorización.</li>
-                <li><strong><a href="proyectos/backup_ubuntu_windows.html#backup">Backup automático Ubuntu-Windows</a></strong> - Entorno con infraestructura mixta. Se gestionó una copia de seguridad automática con transsferencia de archivos entre ambos sistemas operativos. </li>
-            </ul>
-            <p style="margin-top: 15px;">
-                Experiencia práctica en:
-                <ul style="margin: 20px 0; padding-left: 25px;">
-                    <li>Soporte a usuarios</li>
-                    <li>Virtualización de SS.OO</li>
-                    <li>Plataformas de monitorización</li>
-                    <li>Plataformas Cloud y On Premise</li>
-                    <li>Administración Google WorkSpace y Microsoft 365</li>
-                    <li>Herramientas de ticketing (ITSM Helix y JIRA) </li>
-                </ul>
-            </p>
-            Con experiencia como Técnico de Soporte IT, buscando oportunidad como <strong>Junior en Ciberseguridad</strong>.
-        </section>
 
-        <!-- HABILIDADES -->
-        <section>
-            <h2>🛠️ Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Virtualización & Infraestructura</h3>
-                    <ul>
-                        <li>Proxmox, VirtualBox y VMware</li>
-                        <li>Firewalls (WatchGuard y pfSense)</li>
-                        <li>Active Directory / Azure Active Directory</li>
-                        <li>Configuración de redes LAN</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Ciberseguridad & Seguridad</h3>
-                    <ul>
-                        <li>IDS Snort</li>
-                        <li>Pentesting Básico</li>
-                        <li>Nmap (escaneo de puertos)</li>
-                        <li>Metasploit (pruebas vulnerabilidades)</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Sistemas Operativos</h3>
-                    <ul>
-                        <li>Windows Server 2019/2022</li>
-                        <li>Ubuntu Server</li>
-                        <li>Kali Linux</li>
-                        <li>Windows</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>Herramientas & Monitorización</h3>
-                    <ul>
-                        <li>Nagios Core</li>
-                        <li>Grafana</li>
-                        <li>Cisco Packet Tracer</li>
-                        <li>SSH / RDP</li>
-                        <li>Wireshark</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- FORMACIÓN -->
-        <section>
-            <h2>🎓 Formación</h2>
-            
-            <div class="project">
-                <h3>Ciclo Formativo Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
-                <p><strong>Estado:</strong> Finalizado</p>
-                <p>
-                    Formación integral en redes, seguridad y alta disponibilidad, virtualización, administración de sistemas e infraestructura
-                </p>
+            <div class="hero-ctas">
+                <a href="resources/CV PPG.pdf" download="CV-Pablo-Perez-Garcia.pdf" class="btn-p">↓ Descargar CV</a>
+                <a href="https://linkedin.com/in/ppg92"   target="_blank" rel="noopener" class="btn-s">LinkedIn ↗</a>
+                <a href="https://github.com/papgar92"      target="_blank" rel="noopener" class="btn-s">GitHub ↗</a>
             </div>
 
-             <div class="project">
-                <h3><a href="https://evolve.es/formacion/masters/master-ciberseguridad-inteligencia-artificial-online/" target="_blank">Master en Ciberseguridad e IA</a></h3>
-                <p><strong>Estado:</strong> En curso (Abr-Dic 2026)</p>
-                <p>
-                    Especialización en hacking ético y defensa de infraestructuras corporativas, complementada con el uso de Inteligencia Artificial aplicada (vibe coding) y creación de redes neuronales.
-                </p>
+            <div class="hero-available">
+                <div class="pulse-dot"></div>
+                Disponible · Buscando primer rol Blue Team / SOC · Madrid, España
             </div>
-        </section>
 
-        <!-- CERTIFICACIONES -->
-        <section>
-            <h2>🏅 Certificaciones & Formación complementaria</h2>
-            <div class="cert-container">
-                <div class="cert-box">
-                    <h3>Certificaciones Técnicas</h3>
-                    <ul>
-                        <li><a href="resources/IFCT0410.pdf" target="_blank">IFCT0410</a> (Administración y Diseño de Redes Departamentales)</li>
-                        <li><a href="resources/IFCT0050.pdf" target="_blank">IFCT0050</a> (Ciberseguridad avanzada en entornos OT)</li>
-                        <li><a href="resources/IFCT095PO.pdf" target="_blank">IFCT095PO</a> (Backend: Python y Django)</li>
-                    </ul>
-                </div>
-                <div class="cert-box">
-                    <h3>Próximos proyectos</h3>
-                    <ul>
-                        <li>AZ-900</li>
-                        <li>CCNA</li>
-                        <li>Informática forense</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
+        </div>
     </div>
+</section>
 
-    
-    
-    
-    <!-- CONTACTO + FOOTER se carga aquí -->
-    <div id="footer-placeholder"></div>
+<div class="divider"></div>
 
-    
-    
-    <!--
-        <script>
-        const codeLines = [
-            "admin@blueteam-server:~$ nmap -sV -p- 192.168.1.0/24",
-            "Starting Nmap 7.92 ( https://nmap.org )",
-            "Host is up (0.0020s latency).",
-            "PORT     STATE SERVICE VERSION",
-            "22/tcp   open  ssh     OpenSSH 8.2p1",
-            "80/tcp   open  http    Apache httpd 2.4.41",
-            "admin@blueteam-server:~$ tail -f /var/log/snort/alert",
-            "[**] [1:1000001:1] SQL Injection Attempt Detected [**]",
-            "[Classification: Web Application Attack] [Priority: 1]",
-            "admin@blueteam-server:~$ docker ps -a",
-            "CONTAINER ID   IMAGE         COMMAND    STATUS",
-            "a1b2c3d4e5f6   wazuh/wazuh   \"/init\"    Up 3 days",
-            "admin@blueteam-server:~$ clear",
-            "Reiniciando secuencias de monitorización..."
-        ];
-    
-        const typedTextElement = document.getElementById('typed-text');
-        let lineIndex = 0;
-        let charIndex = 0;
-    
-        function typeCode() {
-            if (lineIndex < codeLines.length) {
-                if (charIndex < codeLines[lineIndex].length) {
-                    // Escribe el siguiente carácter
-                    typedTextElement.innerHTML += codeLines[lineIndex].charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typeCode, Math.random() * 50 + 20); // Velocidad de escritura variable
-                } else {
-                    // Salto de línea al terminar la frase
-                    typedTextElement.innerHTML += "<br>";
-                    lineIndex++;
-                    charIndex = 0;
-                    setTimeout(typeCode, 500); // Pausa entre líneas
-                }
-            } else {
-                // Reinicia el bucle limpiando la consola
-                setTimeout(() => {
-                    typedTextElement.innerHTML = "";
-                    lineIndex = 0;
-                    typeCode();
-                }, 2000); // Pausa antes de limpiar y reiniciar
-            }
-        }
-    
-        // Iniciar el efecto
-        window.onload = typeCode;
-    </script>
-    
-    -->
-    
+<!-- ══════════════════════════════════════════════════
+     SOBRE MÍ
+══════════════════════════════════════════════════ -->
+<section id="sobre-mi">
+    <div class="container">
+
+        <div class="section-label">about.txt</div>
+        <h2 class="section-title">Sobre Mí</h2>
+
+        <div class="terminal">
+            <div class="terminal-bar">
+                <div class="t-dots">
+                    <div class="tdot td-r"></div>
+                    <div class="tdot td-y"></div>
+                    <div class="tdot td-g"></div>
+                </div>
+                pablo@blueteam: ~ — cat about.txt
+            </div>
+            <div class="terminal-body">
+
+                <div><span class="tp">$</span> <span class="tc">cat about.txt</span></div>
+                <div class="to">
+                    A los 30 años tomé una decisión consciente: cambiar de carrera hacia la 				informática. No fue tarde — fue deliberado. Venía de un entorno técnico con 			gestión de incidencias, operación bajo presión y herramientas 					especializadas. Quería formalizar ese camino y profundizar en lo que 				realmente me apasionaba: entender cómo son los sistemas para posteriormente 			entender cómo son atacados y cómo defenderlos.
+                </div>
+
+                <div><span class="tp">$</span> <span class="tc">cat context.txt</span></div>
+                <div class="to">
+                    Finalicé la FP Superior en <span class="th">ASIR</span> con un TFG centrado en 			diseño de red segura para PYME: firewall pfSense, IDS Snort y 					monitorización con Nagios. Actualmente trabajo como <span class="th">				Técnico de Soporte IT</span> administrando infraestructura WIntel, Proxmox, 			WatchGuard y sistemas de monitorización en producción. Cursando <span 				class="th">Máster en Ciberseguridad &amp; IA</span> (Abr–Dic 2026).
+                </div>
+
+                <div><span class="tp">$</span> <span class="tc">cat objective.txt</span></div>
+                <div class="to">
+                    Busco incorporarme a un equipo <span class="tk">Blue Team</span> o <span class="tk">SOC</span>
+                    donde desarrollar análisis de eventos, respuesta a incidentes y forense digital.
+                    Quiero ese primer rol específico en ciberseguridad donde aplicar lo construido
+                    y seguir creciendo en un entorno real.
+                </div>
+
+                <div>
+                    <span class="tp">$</span>
+                    <span class="cur" style="display:inline-block; width:8px; height:.9em; background:var(--green); animation:blink 1s step-end infinite; vertical-align:middle;"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     HABILIDADES
+══════════════════════════════════════════════════ -->
+<section id="habilidades">
+    <div class="container">
+
+        <div class="section-label">skills.json</div>
+        <h2 class="section-title">Habilidades Técnicas</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="sc-head">
+                    <div class="sc-icon">🛡️</div>
+                    <h3>Blue Team / Defensa</h3>
+                </div>
+                <ul class="sl">
+                    <li>IDS/IPS — Snort (reglas, alertas, análisis)</li>
+                    <li>Firewall — pfSense, WatchGuard</li>
+                    <li>MITRE ATT&amp;CK Framework</li>
+                    <li>Análisis de logs y eventos de red</li>
+                    <li>Wireshark — análisis de tráfico</li>
+                    <li>ISO 27000 — fundamentos</li>
+                    <li>Ciberseguridad en entornos OT</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="sc-head">
+                    <div class="sc-icon">📊</div>
+                    <h3>Monitorización &amp; SIEM</h3>
+                </div>
+                <ul class="sl">
+                    <li>Nagios Core — configuración y alertas</li>
+                    <li>Zabbix — monitorización SNMP</li>
+                    <li>Grafana + Prometheus (Docker)</li>
+                    <li>PNP4Nagios — métricas históricas</li>
+                    <li>Alertas SMTP automatizadas</li>
+                    <li>Revisión y correlación de eventos</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="sc-head">
+                    <div class="sc-icon">🖥️</div>
+                    <h3>Sistemas &amp; Infraestructura</h3>
+                </div>
+                <ul class="sl">
+                    <li>Windows Server 2019/2022 + AD/GPO</li>
+                    <li>Ubuntu Server · Kali Linux</li>
+                    <li>Proxmox VE · VMware · VirtualBox</li>
+                    <li>Entra ID (Azure AD) + Microsoft Intune</li>
+                    <li>Microsoft Azure — fundamentos cloud</li>
+                    <li>Despliegue PXE · Google Workspace</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <div class="sc-head">
+                    <div class="sc-icon">⚙️</div>
+                    <h3>Scripting &amp; Herramientas</h3>
+                </div>
+                <ul class="sl">
+                    <li>Python — análisis de logs, detección de patrones</li>
+                    <li>Bash — scripting y automatización</li>
+                    <li>PowerShell — administración Windows</li>
+                    <li>Nmap — escaneo y reconocimiento</li>
+                    <li>Jira · Helix ITSM — ticketing</li>
+                    <li>SSH / RDP — acceso remoto seguro</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     PROYECTOS
+══════════════════════════════════════════════════ -->
+<section id="proyectos">
+    <div class="container">
+
+        <div class="section-label">projects/</div>
+        <h2 class="section-title">Proyectos</h2>
+
+        <div class="projects-list">
+
+            <!-- ── TFG ASIR ── -->
+            <div class="proj-card featured">
+                <div class="proj-header" onclick="toggleProj(this)">
+                    <div class="proj-head-left">
+                        <div class="badges">
+                            <span class="badge bg">⭐ TFG ASIR</span>
+                            <span class="badge bb">Blue Team</span>
+                            <span class="badge bg">Proyecto Integral</span>
+                        </div>
+                        <h3>Diseño e Implementación de Red Segura para PYME</h3>
+                        <div class="proj-date">📅 Sep – Dic 2025</div>
+                    </div>
+                    <div class="proj-toggle">[ expandir ▾ ]</div>
+                </div>
+                <div class="proj-body open">
+                    <p>
+                        Proyecto principal del ASIR. Diseño, implementación y validación de una infraestructura de red
+                        segura para una PYME con herramientas open source. Arquitectura completa con segmentación,
+                        firewall perimetral, detección de intrusiones y monitorización activa.
+                    </p>
+                    <h4>Componentes implementados</h4>
+                    <ul>
+                        <li><strong>pfSense:</strong> Firewall/router perimetral con NAT, reglas de filtrado y control de puertos</li>
+                        <li><strong>Snort IDS:</strong> Detección de intrusiones con reglas comunitarias y alertas en tiempo real</li>
+                        <li><strong>Nagios Core:</strong> Monitorización de servicios, dispositivos y estados de red</li>
+                        <li><strong>Active Directory:</strong> Gestión centralizada de identidades en Windows Server 2022</li>
+                        <li><strong>Cisco Packet Tracer:</strong> Diseño de topología estrella extendida WAN/LAN</li>
+                    </ul>
+                    <h4>Validación</h4>
+                    <ul>
+                        <li>Metodología Waterfall: requisitos → diseño → implementación → pruebas → documentación</li>
+                        <li>Pruebas: conectividad, autenticación, detección de intrusiones, seguridad perimetral</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">pfSense</span>
+                        <span class="tag">Snort IDS</span>
+                        <span class="tag">Nagios Core</span>
+                        <span class="tag">Windows Server 2022</span>
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">VirtualBox</span>
+                        <span class="tag">Packet Tracer</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://drive.google.com/file/d/1PwWBgOksGR7kOjKWN7LYtbI0KiHQg90q/view?usp=share_link" target="_blank" class="proj-link">↗ Presentación</a>
+                        <a href="https://drive.google.com/file/d/1ygLtmTYxONglrcKP8YnSM4oEUYcFhf-Z/view?usp=drive_link" target="_blank" class="proj-link">↗ Memoria</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── DETECTOR FUERZA BRUTA SSH ── -->
+            <div class="proj-card featured">
+                <div class="proj-header" onclick="toggleProj(this)">
+                    <div class="proj-head-left">
+                        <div class="badges">
+                            <span class="badge bg">🐍 Python</span>
+                            <span class="badge bb">Blue Team</span>
+                            <span class="badge bg">Forense / Log Analysis</span>
+                        </div>
+                        <h3>Detector de Ataques de Fuerza Bruta SSH</h3>
+                        <div class="proj-date">📅 Mayo 2026</div>
+                    </div>
+                    <div class="proj-toggle">[ expandir ▾ ]</div>
+                </div>
+                <div class="proj-body open">
+                    <p>
+                        Herramienta ligera en Python que analiza registros de autenticación SSH
+                        (<code style="font-family:var(--mono); font-size:.82rem; color:var(--blue);">auth.log</code>)
+                        para detectar ataques de fuerza bruta, identificar cuentas afectadas y señalar posibles
+                        vulnerabilidades — sin necesidad de un SIEM. El proyecto simula un escenario realista de
+                        ataque y demuestra cómo detectarlo con análisis de logs en Python puro.
+                    </p>
+                    <h4>Capacidades del detector</h4>
+                    <ul>
+                        <li><strong>Detección de patrones:</strong> Identifica intentos fallidos de autenticación repetidos desde la misma IP</li>
+                        <li><strong>Cuentas afectadas:</strong> Determina qué usuarios han sido objetivo del ataque</li>
+                        <li><strong>Análisis temporal:</strong> Detecta picos de actividad y ventanas temporales del ataque</li>
+                        <li><strong>Generación de alertas:</strong> Marca IPs sospechosas y umbrales de intentos configurables</li>
+                        <li><strong>Exportación de informes:</strong> Genera reportes legibles del análisis forense</li>
+                    </ul>
+                    <h4>Habilidades Blue Team demostradas</h4>
+                    <ul>
+                        <li>Análisis de registros del sistema (log analysis)</li>
+                        <li>Detección de patrones de ataque — MITRE ATT&amp;CK T1110 (Brute Force)</li>
+                        <li>Scripting Python orientado a seguridad defensiva</li>
+                        <li>Generación de reportes de incidente sin dependencias de herramientas comerciales</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Log Analysis</span>
+                        <span class="tag">SSH / auth.log</span>
+                        <span class="tag">Brute Force Detection</span>
+                        <span class="tag">MITRE T1110</span>
+                        <span class="tag">Incident Reporting</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/papgar92/Detector-Fuerza-bruta-SSH" target="_blank" class="proj-link">↗ GitHub</a>
+                        <a href="https://github.com/papgar92/Detector-Fuerza-bruta-SSH/blob/main/sample_logs/auth.log" target="_blank" class="proj-link">↗ Sample auth.log</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── LAB MONITORIZACIÓN ── -->
+            <div class="proj-card">
+                <div class="proj-header" onclick="toggleProj(this)">
+                    <div class="proj-head-left">
+                        <div class="badges">
+                            <span class="badge ba">Home Lab</span>
+                            <span class="badge bb">Monitorización</span>
+                        </div>
+                        <h3>Lab de Monitorización y Seguridad — Grafana + Prometheus + Docker</h3>
+                        <div class="proj-date">📅 Dic 2025 – Ene 2026</div>
+                    </div>
+                    <div class="proj-toggle">[ expandir ▾ ]</div>
+                </div>
+                <div class="proj-body">
+                    <p>
+                        Laboratorio personal para simulación de incidentes y análisis de eventos de red.
+                        Stack de monitorización moderno en contenedores Docker con pruebas de detección
+                        y revisión de logs en entorno controlado.
+                    </p>
+                    <h4>Stack implementado</h4>
+                    <ul>
+                        <li>Grafana — dashboards y visualización de eventos de seguridad</li>
+                        <li>Prometheus — recolección de métricas de sistema y red</li>
+                        <li>Docker — orquestación y aislamiento del entorno</li>
+                        <li>Revisión y análisis manual de logs del sistema</li>
+                    </ul>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Linux</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://n9.cl/sxkrvy" target="_blank" class="proj-link">↗ Documentación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── PROXMOX + NAGIOS EN PRODUCCIÓN ── -->
+            <div class="proj-card">
+                <div class="proj-header" onclick="toggleProj(this)">
+                    <div class="proj-head-left">
+                        <div class="badges">
+                            <span class="badge bb">Entorno laboral</span>
+                            <span class="badge bg">Producción</span>
+                        </div>
+                        <h3>Proxmox VE + Nagios Core — Monitorización en producción</h3>
+                        <div class="proj-date">📅 Dic 2025 – Ene 2026 · Cartronic Group</div>
+                    </div>
+                    <div class="proj-toggle">[ expandir ▾ ]</div>
+                </div>
+                <div class="proj-body">
+                    <p>
+                        Implementación en entorno productivo de PYME. Servidor físico reconvertido a host Proxmox,
+                        con infraestructura de monitorización completa para servicios críticos: SAP,
+                        servidor de dominio, switch SNMP y terminales.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Proxmox VE</span>
+                        <span class="tag">Nagios Core</span>
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">SNMP</span>
+                        <span class="tag">PNP4Nagios</span>
+                        <span class="tag">SMTP</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://n9.cl/9owpy" target="_blank" class="proj-link">↗ Documentación</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── SCRIPT BACKUP ── -->
+            <div class="proj-card">
+                <div class="proj-header" onclick="toggleProj(this)">
+                    <div class="proj-head-left">
+                        <div class="badges">
+                            <span class="badge bb">Entorno laboral</span>
+                            <span class="badge ba">Automatización</span>
+                        </div>
+                        <h3>Script Bash — Backup automático Ubuntu → Windows Server</h3>
+                        <div class="proj-date">📅 Ene 2026 · Cartronic Group</div>
+                    </div>
+                    <div class="proj-toggle">[ expandir ▾ ]</div>
+                </div>
+                <div class="proj-body">
+                    <p>
+                        Automatización de copias de seguridad en entorno mixto Linux/Windows.
+                        El script gestiona la transferencia del backup más reciente desde Ubuntu Server
+                        al servidor Windows via SMB/FTP, manteniendo una única copia vigente.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Bash</span>
+                        <span class="tag">Ubuntu Server</span>
+                        <span class="tag">Windows Server</span>
+                        <span class="tag">SMB/CIFS</span>
+                        <span class="tag">FTP</span>
+                        <span class="tag">Cron</span>
+                    </div>
+                    <div class="proj-links">
+                        <a href="https://github.com/papgar92/Backup-Ubuntu-Server-Windows-server" target="_blank" class="proj-link">↗ GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     LEARNING PATH
+══════════════════════════════════════════════════ -->
+<section id="formacion">
+    <div class="container">
+
+        <div class="section-label">learning_path/</div>
+        <h2 class="section-title">Formación y Ruta Blue Team</h2>
+
+        <div class="lp-grid" id="lp-grid">
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">ASIR — Administración de Sistemas en Red</div>
+                    <span class="lp-status s-done">✓ Finalizado</span>
+                </div>
+                <div class="lp-org">ILERNA Online · Feb 2026</div>
+                <div class="bar"><div class="fill f-b" data-w="100" style="width:0%"></div></div>
+                <div class="bar-label">Completado</div>
+            </div>
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">Máster en Ciberseguridad &amp; IA</div>
+                    <span class="lp-status s-active">● En curso</span>
+                </div>
+                <div class="lp-org">Evolve Academy · Abr – Dic 2026</div>
+                <div class="bar"><div class="fill f-g" data-w="20" style="width:0%"></div></div>
+                <div class="bar-label">~20% completado</div>
+            </div>
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">TryHackMe — SOC Level 1 Path</div>
+                    <span class="lp-status s-active">● En curso</span>
+                </div>
+                <div class="lp-org">TryHackMe · 2026</div>
+                <div class="bar"><div class="fill f-g" data-w="35" style="width:0%"></div></div>
+                <div class="bar-label">En progreso activo</div>
+            </div>
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">BTL1 — Blue Team Labs Level 1</div>
+                    <span class="lp-status s-next">⏳ Próximo</span>
+                </div>
+                <div class="lp-org">Security Blue Team · Prioridad Q3 2026</div>
+                <div class="bar"><div class="fill f-a" data-w="8" style="width:0%"></div></div>
+                <div class="bar-label">Preparación en curso</div>
+            </div>
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">SC-200 — Microsoft Security Operations</div>
+                    <span class="lp-status s-next">⏳ Planificado</span>
+                </div>
+                <div class="lp-org">Microsoft · Q4 2026 (tras BTL1)</div>
+                <div class="bar"><div class="fill f-a" data-w="0" style="width:0%"></div></div>
+                <div class="bar-label">Pendiente de BTL1</div>
+            </div>
+
+            <div class="lp-card">
+                <div class="lp-head">
+                    <div class="lp-title">Fundamentos MITRE ATT&amp;CK + Forense Windows</div>
+                    <span class="lp-status s-done">✓ Completado</span>
+                </div>
+                <div class="lp-org">LinkedIn Learning + OpenWebinars · 2025</div>
+                <div class="bar"><div class="fill f-b" data-w="100" style="width:0%"></div></div>
+                <div class="bar-label">Completado</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     EXPERIENCIA
+══════════════════════════════════════════════════ -->
+<section id="experiencia">
+    <div class="container">
+
+        <div class="section-label">experience.log</div>
+        <h2 class="section-title">Experiencia</h2>
+
+        <div class="timeline">
+
+            <div class="tl-item">
+                <div class="tl-period">Dic 2025 – Presente</div>
+                <div class="tl-role">Técnico de Soporte IT</div>
+                <div class="tl-co">Cartronic Group</div>
+                <div class="tl-desc">
+                    Administración de infraestructura IT en entorno PYME/corporativo Windows.
+                    Gestión de usuarios en Active Directory, administración de firewall WatchGuard,
+                    virtualización con Proxmox y VMware, monitorización con Nagios y Zabbix.
+                    Resolución de incidencias N1-N2 (SAP, RDP, ofimática).
+                </div>
+                <div class="tl-tags">
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">WatchGuard</span>
+                    <span class="tag">Proxmox</span>
+                    <span class="tag">Nagios</span>
+                    <span class="tag">Zabbix</span>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-period">Abr 2025 – Jul 2025</div>
+                <div class="tl-role">Técnico de Soporte IT (Prácticas)</div>
+                <div class="tl-co">Prosegur Activa</div>
+                <div class="tl-desc">
+                    Soporte N1-N2. Migración On-Premise a Azure AD / Microsoft Intune.
+                    Despliegue de SSOO via PXE. Gestión de inventario y GPOs con Entra ID.
+                </div>
+                <div class="tl-tags">
+                    <span class="tag">Entra ID</span>
+                    <span class="tag">Microsoft Intune</span>
+                    <span class="tag">Azure AD</span>
+                    <span class="tag">PXE</span>
+                    <span class="tag">Helix ITSM</span>
+                </div>
+            </div>
+
+            <div class="tl-item dim">
+                <div class="tl-period">Feb 2017 – Dic 2025</div>
+                <div class="tl-role">Operador Servicio Técnico Remoto</div>
+                <div class="tl-co">
+                    Movistar Prosegur Alarmas
+                    <span style="color:var(--text-dim); font-size:.76rem;"> · punto de inflexión hacia IT</span>
+                </div>
+                <div class="tl-desc">
+                    Resolución de incidencias en dispositivos de seguridad en red (cámaras IP, NVRs):
+                    configuración de puertos, DNS, direccionamiento IP. Gestión estructurada de tickets
+                    con Salesforce y escalado via JIRA. Casi 9 años de operación continua bajo presión
+                    que determinaron mi decisión de dar el salto a ciberseguridad.
+                </div>
+                <div class="tl-tags">
+                    <span class="tag">Salesforce</span>
+                    <span class="tag">JIRA</span>
+                    <span class="tag">Networking básico</span>
+                    <span class="tag">Gestión de incidentes</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     CERTIFICACIONES
+══════════════════════════════════════════════════ -->
+<section id="certificaciones">
+    <div class="container">
+
+        <div class="section-label">certs/</div>
+        <h2 class="section-title">Certificaciones</h2>
+
+        <div class="certs-grid">
+            <a href="resources/IFCT0410.pdf" target="_blank" class="cert-card">
+                <div class="cert-ico">📡</div>
+                <div class="cert-info">
+                    <div class="cert-name">IFCT0410 — Redes Departamentales</div>
+                    <div class="cert-org">LideraK Formación · Jun – Dic 2025</div>
+                </div>
+                <div class="cert-arr">↗</div>
+            </a>
+            <a href="resources/IFCT0050.pdf" target="_blank" class="cert-card">
+                <div class="cert-ico">🔐</div>
+                <div class="cert-info">
+                    <div class="cert-name">IFCT0050 — Ciberseguridad en entornos OT</div>
+                    <div class="cert-org">Grupo Hedima · Jul – Ago 2025</div>
+                </div>
+                <div class="cert-arr">↗</div>
+            </a>
+            <a href="resources/IFCT095PO.pdf" target="_blank" class="cert-card">
+                <div class="cert-ico">🐍</div>
+                <div class="cert-info">
+                    <div class="cert-name">IFCT095PO — Python y Django</div>
+                    <div class="cert-org">Campo Grande Formación · Sep – Nov 2025</div>
+                </div>
+                <div class="cert-arr">↗</div>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════════════════════════════════════════
+     CONTACTO
+══════════════════════════════════════════════════ -->
+<section id="contacto">
+    <div class="container">
+        <div class="contact-grid">
+
+            <!-- Columna izquierda -->
+            <div class="contact-info">
+                <div class="section-label">contact.sh</div>
+                <h2 class="section-title">¿Hablamos?</h2>
+                <p>
+                    Busco mi primera posición en <strong>Blue Team o SOC</strong>.
+                    Si tienes un equipo de seguridad defensiva donde alguien con base técnica real,
+                    proyectos propios y formación activa puede encajar — escríbeme.
+                </p>
+                <div class="contact-direct">
+                    <a href="mailto:perez.gcia+job@gmail.com"                                              class="cl">✉&nbsp; e-mail</a>
+                    <a href="https://linkedin.com/in/ppg92"    target="_blank" rel="noopener"          class="cl">in&nbsp; LinkedIn / ppg92</a>
+                    <a href="https://github.com/papgar92"       target="_blank" rel="noopener"          class="cl">⌥&nbsp; GitHub / papgar92</a>
+                    <a href="https://wa.me/34681279891?text=Hola%20Pablo,%20me%20interesa%20tu%20perfil" target="_blank" rel="noopener" class="cl">📱 WhatsApp</a>
+                    <a href="resources/CV PPG.pdf" download="CV-Pablo-Perez-Garcia.pdf"                class="cl">↓&nbsp; Descargar CV</a>
+		    <a href="../resources/Recomendacion.pdf" download="CV-Pablo-Perez-Garcia.pdf"                class="cl">↓&nbsp; Referencias</a>
+                </div>
+            </div>
+
+            <!-- Columna derecha: formulario -->
+            <div class="contact-form-wrap">
+                <div class="form-title">// Envíame un mensaje directo</div>
+
+                <form id="contact-form" novalidate>
+                    <input type="hidden" name="access_key"  value="f44d4362-64f5-42f5-a0a6-6808b2f145d7">
+                    <input type="hidden" name="subject"     value="💼 Contacto portfolio — Pablo Pérez García">
+                    <input type="hidden" name="from_name"   value="Portfolio Contact">
+                    <!-- Honeypot anti-spam — no tocar -->
+                    <input type="checkbox" name="botcheck"  style="display:none;">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-name">Nombre *</label>
+                            <input type="text"  id="f-name"  name="name"  placeholder="Tu nombre"       required>
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email">Email *</label>
+                            <input type="email" id="f-email" name="email" placeholder="tu@empresa.com"  required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-company">Empresa</label>
+                            <input type="text" id="f-company" name="company" placeholder="Nombre de la empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-reason">Motivo</label>
+                            <select id="f-reason" name="reason">
+                                <option value="">Selecciona...</option>
+                                <option value="Oferta de trabajo">Oferta de trabajo</option>
+                                <option value="Colaboración">Colaboración</option>
+                                <option value="Prácticas / Beca">Prácticas / Beca</option>
+                                <option value="Consulta técnica">Consulta técnica</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="f-message">Mensaje *</label>
+                        <textarea id="f-message" name="message" placeholder="Cuéntame en qué puedo ayudarte o cuál es la oportunidad..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-p" id="form-btn">
+                        <span id="form-btn-text">→ Enviar mensaje</span>
+                    </button>
+                    <div id="form-feedback"></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+    <p>Pablo Pérez García · Blue Team · Madrid, España</p>
+    <p class="footer-sub">Actualizado: <span id="fecha-footer"></span></p>
+</footer>
+
+<!-- ══════════════════════════════════════════════════
+     SCRIPTS
+══════════════════════════════════════════════════ -->
+<script src="main.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
